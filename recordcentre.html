@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Register Test Centre</title>
+
+  <!--logo page-->
+  <link rel="icon" type="image/x-icon" href="logo.ico"/>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+
+
+  <!-- Custom fonts for this template -->
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <style>
+  a:hover{background-color: blue;}
+  body{background-color:mediumturquoise;}
+  </style>
+
+</head>
+
+<body>
+  <!--Top Bar-->
+	<section id="topbar" class="d-none d-sm-block">
+		<div class="container-fluid clearfix">
+			<div class="contact-info float-left">
+			 <a href="mailto:contact@example.com">mehahospital@gmail.com</a>
+			&nbsp;+01123456789
+			</div>
+		</div>
+	</section>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarhospital">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarhospital">
+			<ul class="nav nav-pills" role="tablist">
+				<li class="nav-item pill-1">
+					<a class="nav-link" style="color:yellow;" href=""><b>Covid19</b></a>
+				</li>
+				<li class="nav-item pill-2">
+					<a class="nav-link " style="color:white;" href="generatemanager.html">Generate Test Report</a>
+
+				</li>
+				<li class="nav-item pill-3">
+					<a class="nav-link " style="color:white;" href="recordcentre.html">Register Test Centre</a>
+
+				</li>
+
+				<br><br>
+
+				<li class="nav-item pill-4">
+					<a class="nav-link " style="color:white;" href="recordtester.html">Record Tester </a>
+
+				</li>
+
+				<li class="nav-item pill-5">
+					<a class="nav-link " style="color:white;" href="recordtestkit.html">Manage Test Kit Stocks</a>
+
+				</li>
+
+				<li class="nav-item pill-6">
+					<a class="nav-link" style="color:white;" href="homepage.html"> Sign Out</a>
+				</li>
+			</ul>
+		</div>
+
+	</nav>
+  <br>
+  <br>
+
+
+	 <!-- IDEA: Central content -->
+
+
+            <!-- IDEA: Start of View History-->
+
+
+		 <form action="" style="text-align:Center">
+			  <label for="centreID"> Centre ID:</label>
+			  <input type="text" id="centreID" name="centreID"><br><br>
+			  <label for="location">Location :</label>
+			  <input type="text" id="location" name="location"><br><br>
+
+			  <button onclick="myFunction()" class="btn btn-primary">Submit</button>
+			  <button type="button" name="showbutton" onclick="showHistory()" class="btn btn-dark">Show Centre List</button>
+
+
+         <br>
+				  <br>
+				    <br>
+
+
+			   <table id ='history_div' style="display:none;margin:auto;" class="table table-dark" id="history_table">
+                <thead>
+                    <tr>
+                    <th scope="col">Centre ID</th>
+                    <th scope="col">Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>K2020</td>
+                    <td>Kuala Lumpur</td>
+				          </tr>
+				          <tr>
+                    <td>K2022</td>
+                    <td>Kuala Lumpur</td>
+                 </tr>
+                </tbody>
+              </table>
+          </div>
+		</form>
+
+
+    <!-- IDEA: Bootstrap scricpts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+
+	  function showHistory(){
+        document.getElementById('history_div').style.display = 'block';
+        document.getElementById('intro').style.display = 'none';
+        document.getElementById('mmt_div').style.display = 'none';
+      }
+
+
+      // Hide Toggle when click nav link
+      $('.navbar-nav>li>a').on('click', function(){
+      $('.navbar-collapse').collapse('hide');
+      });
+
+	  function myFunction() {
+		alert("The centre already submitted");
+		}
+</script>
+
+    </script>
+
+
+</body>
+
+		<footer class="footer py-4">
+            <div class="container">
+                    <div style="text-align:center;">Copyright ©️ Meha Hospital 2020</div>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+  <!-- Bootstrap core JavaScript -->
+
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+
+</html>
